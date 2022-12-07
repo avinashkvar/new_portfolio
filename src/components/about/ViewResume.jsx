@@ -8,7 +8,7 @@ export const ViewResume = () => {
 	return (
 		<Button _hover={{ bg: bg, color: color }}>
 			<Link
-				fontSize={['10px', '15px', '20px']}
+				fontSize={['15px', '18px', '20px']}
 				fontWeight="bold"
 				className="link"
 				isExternal
@@ -18,7 +18,7 @@ export const ViewResume = () => {
 			</Link>
 			<Icon
 				as={AiFillEye}
-				fontSize={['10px', '15px', '20px']}
+				fontSize={['15px', '18px', '20px']}
 				fontWeight="bold"
 				m={1}
 			></Icon>

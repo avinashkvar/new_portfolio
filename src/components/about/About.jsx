@@ -38,7 +38,7 @@ export const About = () => {
 				</VStack>
 			</Box>
 			<Box m={2}>
-				<Image src={photo} borderRadius="8px" bg={bg} padding="2px"></Image>
+				<Image src={photo} borderRadius="8px" bg={bg} padding="2px" width={['200px','400px','800px']}></Image>
 			</Box>
 		</Flex>
 	);
