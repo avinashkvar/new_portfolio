@@ -4,7 +4,7 @@ import { Stack, Box, Center } from '@chakra-ui/react';
 import { Home } from './components/home/Home';
 import { ScrollTop } from './components/scrollup/ScrollTop';
 import { About } from './components/about/About';
-
+import {Slide} from 'react-awesome-reveal'
 function App() {
 	return (
 		<div>
@@ -17,10 +17,13 @@ function App() {
 						<Home id="home" />
 					</Center>
 				</Box>
+
 				<Box width="100%">
-					<Center>
-						<About/>
-					</Center>
+					<Slide>
+						<Center>
+							<About />
+						</Center>
+					</Slide>
 				</Box>
 			</Stack>
 			<Box>

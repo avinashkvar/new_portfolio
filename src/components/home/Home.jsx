@@ -12,7 +12,8 @@ import {
 import { BsEmojiWinkFill, BsGithub, BsLinkedin } from 'react-icons/bs';
 import HomeImageLight from '../../media/HomeLight.svg';
 import HomeImageDark from '../../media/HomeDark.svg';
-
+import { AttentionSeeker } from 'react-awesome-reveal';
+import 'animate.css'
 export const Home = () => {
 	const { colorMode } = useColorMode();
 	return (
@@ -28,24 +29,27 @@ export const Home = () => {
 						fontSize={['30px', '40px', '60px']}
 						bgGradient="linear(to-l, #7928CA, #FF0080)"
 						bgClip="text"
+						className="animate__animated animate__flipInX"
 					>
 						I'm <b>Avinash K</b>
 					</Text>
 				</Box>
 			</HStack>
 			<HStack>
-				<Text
-					fontSize={['20px', '30px', '40px']}
-					bgGradient="linear(to-l, #7928CA, #FF0080)"
-					bgClip="text"
-					fontWeight="bold"
-					Full
-					Stack
-					Web
-					Developer
-				>
-					Full Stack Developer
-				</Text>
+				<AttentionSeeker>
+					<Text
+						fontSize={['20px', '30px', '40px']}
+						bgGradient="linear(to-l, #7928CA, #FF0080)"
+						bgClip="text"
+						fontWeight="bold"
+						Full
+						Stack
+						Web
+						Developer
+					>
+						Full Stack Web Developer
+					</Text>
+				</AttentionSeeker>
 			</HStack>
 			<HStack>
 				<Center>
