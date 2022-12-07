@@ -1,7 +1,8 @@
 import './App.css';
 import { Navbar } from './components/navbar/Navbar';
-import { Stack, Box, Center } from '@chakra-ui/react';
+import { Stack, Box, Center,Text } from '@chakra-ui/react';
 import { Home } from './components/home/Home';
+import { ScrollTop } from './components/scrollup/ScrollTop';
 
 function App() {
 	return (
@@ -16,6 +17,9 @@ function App() {
 					</Center>
 				</Box>
 			</Stack>
+			<Box>
+				<ScrollTop />
+			</Box>
 		</div>
 	);
 }
