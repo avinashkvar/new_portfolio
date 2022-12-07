@@ -17,7 +17,7 @@ import 'animate.css'
 export const Home = () => {
 	const { colorMode } = useColorMode();
 	return (
-		<VStack>
+		<VStack marginTop='60px'>
 			<HStack>
 				<Box>
 					<Text fontSize={['40px', '50px', '100px']} fontWeight="bold">

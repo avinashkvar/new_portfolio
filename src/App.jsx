@@ -4,7 +4,9 @@ import { Stack, Box, Center } from '@chakra-ui/react';
 import { Home } from './components/home/Home';
 import { ScrollTop } from './components/scrollup/ScrollTop';
 import { About } from './components/about/About';
-import {Slide} from 'react-awesome-reveal'
+import { Slide } from 'react-awesome-reveal';
+import { Skills } from './components/Skills/Skills';
+
 function App() {
 	return (
 		<div>
@@ -12,18 +14,21 @@ function App() {
 				<Box>
 					<Navbar />
 				</Box>
-				<Box width="100%">
+				<Box width="100%" id="home">
 					<Center>
-						<Home id="home" />
+						<Home />
 					</Center>
 				</Box>
 
-				<Box width="100%">
+				<Box width="100%" id="about">
 					<Slide>
 						<Center>
 							<About />
 						</Center>
 					</Slide>
+				</Box>
+				<Box id='skills'>
+					<Skills/>
 				</Box>
 			</Stack>
 			<Box>

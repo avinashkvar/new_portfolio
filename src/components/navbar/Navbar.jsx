@@ -14,7 +14,7 @@ import {
 	useColorModeValue,
 	VStack
 } from '@chakra-ui/react';
-import { GiHamburgerMenu } from 'react-icons/gi';
+import { GiConsoleController, GiHamburgerMenu } from 'react-icons/gi';
 import { useRef } from 'react';
 
 export const Navbar = () => {
@@ -23,13 +23,19 @@ export const Navbar = () => {
 	const btnRef = useRef();
 	const bg = useColorModeValue('#2d3748', '#f7fafc');
 	const color = useColorModeValue('#f7fafc', '#2d3748');
+	const handleOnClick = ()=>{
+        onClose();
+	}
 	return (
 		<Box
 			p={3}
 			w="100%"
-			borderBottom="0.1px solid gray"
-			bg="light"
-			zIndex={2}
+			backgroundColor={color}
+			position="fixed"
+			overflow="hidden"
+			top="0"
+			zIndex="20"
+			background="Scrollbar"
 		>
 			<Flex
 				align="center"
@@ -38,7 +44,10 @@ export const Navbar = () => {
 				m={[1, 2, 3]}
 			>
 				<Box>
-					<Text fontSize={['20px','20px','25px','30px']} fontWeight="bold">
+					<Text
+						fontSize={['20px', '20px', '25px', '30px']}
+						fontWeight="bold"
+					>
 						{'</>'}Welcome!
 					</Text>
 				</Box>
@@ -69,7 +78,7 @@ export const Navbar = () => {
 
 									<DrawerBody>
 										<VStack>
-                                            <Tabs></Tabs>
+											<Tabs cb={handleOnClick}></Tabs>
 										</VStack>
 									</DrawerBody>
 								</DrawerContent>
