@@ -59,7 +59,7 @@ export const Navbar = () => {
 							</Button>
 							<Drawer
 								isOpen={isOpen}
-								placement="left"
+								placement="top"
 								onClose={onClose}
 								finalFocusRef={btnRef}
 							>

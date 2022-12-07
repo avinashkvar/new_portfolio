@@ -12,7 +12,7 @@ export const Tabs = () => {
 		{ title: 'Home', icon: AiFillHome,link:'#' },
 		{ title: 'About', icon: BsPersonBoundingBox,link:'#about'},
 		{ title: 'Skills', icon: FaGraduationCap ,link:'#'},
-		{ title: 'Projucts', icon: BsStack,link:'#' },
+		{ title: 'Projects', icon: BsStack,link:'#' },
 		{ title: 'Contact', icon: IoMdContact,link:'#' },
 	];
 	const bg = useColorModeValue('#2d3748', '#f7fafc');
@@ -20,8 +20,8 @@ export const Tabs = () => {
 	return (
 		<>
 			{tabs.map((e, i) => (
-				<Button key={i} _hover={{ background: bg, color: color }} m={1}>
-					<Link fontWeight="bold" fontSize="20px" className="link" href={e.link}>
+				<Button key={i} _hover={{ background: bg, color: color }} m={1} width={['100px','100px','150px']}>
+					<Link fontWeight="bold" fontSize={['13px','15px','20px']} className="link" href={e.link}>
 						{e.title}
 					</Link>
 					<Icon as={e.icon} fontSize="20px" m={1.5}/>

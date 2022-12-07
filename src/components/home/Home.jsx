@@ -6,13 +6,15 @@ import {
 	Icon,
 	Image,
 	useColorMode,
+	Link,
+	Center
 } from '@chakra-ui/react';
-import { BsEmojiWinkFill } from 'react-icons/bs';
-import HomeImageLight from '../../media/HomeLight.svg'
-import HomeImageDark from '../../media/HomeDark.svg'
+import { BsEmojiWinkFill, BsGithub, BsLinkedin } from 'react-icons/bs';
+import HomeImageLight from '../../media/HomeLight.svg';
+import HomeImageDark from '../../media/HomeDark.svg';
 
 export const Home = () => {
-  const { colorMode } = useColorMode();
+	const { colorMode } = useColorMode();
 	return (
 		<VStack>
 			<HStack>
@@ -31,7 +33,41 @@ export const Home = () => {
 					</Text>
 				</Box>
 			</HStack>
-			<HStack width={['90%','80%','60%']}>
+			<HStack>
+				<Text
+					fontSize={['20px', '30px', '40px']}
+					bgGradient="linear(to-l, #7928CA, #FF0080)"
+					bgClip="text"
+					fontWeight="bold"
+					Full
+					Stack
+					Web
+					Developer
+				>
+					Full Stack Developer
+				</Text>
+			</HStack>
+			<HStack>
+				<Center>
+					<Link
+						fontSize={['20px', '30px', '40px']}
+						href="https://github.com/avinashkvar"
+						isExternal
+						margin="0px 60px 0px 60px"
+					>
+						<Icon as={BsGithub}></Icon>
+					</Link>
+					<Link
+						fontSize={['20px', '30px', '40px']}
+						href="https://www.linkedin.com/in/avinash-k-8691021a8/"
+						isExternal
+						margin="0px 60px 0px 60px"
+					>
+						<Icon as={BsLinkedin}></Icon>
+					</Link>
+				</Center>
+			</HStack>
+			<HStack width={['90%', '80%', '60%']}>
 				<Text fontSize={['10px', '15px', '20px']} fontWeight="bold">
 					“Any fool can write code that a computer can understand. Good
 					programmers write code that humans can understand.”
