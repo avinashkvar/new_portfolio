@@ -9,7 +9,7 @@ export const ScrollTop = () => {
 	const [visible, setVisible] = useState(false);
 
 	const toggleVisible = () => {
-		if (window.pageYOffset > 10) {
+		if (window.pageYOffset > 300) {
 			setVisible(true);
 		} else {
 			setVisible(false);
@@ -28,11 +28,10 @@ export const ScrollTop = () => {
 			<Button
 				onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
 				id="myBtn"
-				padding="20px"
 				borderRadius="8px"
-				m={2}
 				_hover={{ bg: bg, color: color }}
                 style={visible ? {opacity:100}: {opacity:0}}
+                backgroundColor='transparent'
 			>
 				<Icon as={AiOutlineArrowUp} fontSize="35px" fontWeight="bold" />
 			</Button>
