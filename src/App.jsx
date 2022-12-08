@@ -7,6 +7,7 @@ import { About } from './components/about/About';
 import { Slide, AttentionSeeker } from 'react-awesome-reveal';
 import { Skills } from './components/Skills/Skills';
 import { Projects } from './components/projects/Projects';
+import { Contact } from './components/contact/Contact';
 
 function App() {
 	return (
@@ -37,9 +38,15 @@ function App() {
 					</Center>
 				</Box>
 				<hr />
-				<Box id="projects" width='100%'>
+				<Box id="projects" width="100%">
 					<Center>
-						<Projects/>
+						<Projects />
+					</Center>
+				</Box>
+				<hr />
+				<Box id="contact" width="100%">
+					<Center>
+						<Contact/>
 					</Center>
 				</Box>
 			</Stack>
