@@ -5,7 +5,7 @@ import {
 	useColorMode,
 	Text,
 	Image,
-    useMediaQuery,
+	useMediaQuery,
 } from '@chakra-ui/react';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { HiMail } from 'react-icons/hi';
@@ -13,9 +13,10 @@ import { MdCall } from 'react-icons/md';
 import { ContactButtons } from './ContactButtons';
 import contactLight from '../../media/contactLight.svg';
 import contactDark from '../../media/contactDark.svg';
+import { AttentionSeeker } from 'react-awesome-reveal';
 export const Contact = () => {
 	const { colorMode } = useColorMode();
-    const [isLargerThan300] = useMediaQuery('(min-width: 400px)');
+	const [isLargerThan300] = useMediaQuery('(min-width: 400px)');
 	const item = [
 		{
 			title: 'GitHub',
@@ -62,10 +63,12 @@ export const Contact = () => {
 					</VStack>
 				</Box>
 				<Box>
-					<Image
-						src={colorMode === 'light' ? contactLight : contactDark}
-						boxSize={['150px', '250px', '400px']}
-					></Image>
+					<AttentionSeeker effect="rubberBand">
+						<Image
+							src={colorMode === 'light' ? contactLight : contactDark}
+							boxSize={['150px', '250px', '400px']}
+						></Image>
+					</AttentionSeeker>
 				</Box>
 			</Flex>
 		</VStack>
