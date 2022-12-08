@@ -20,17 +20,17 @@ function App() {
 					</Center>
 				</Box>
 
-				<Box width="100%" id="about">
+				<Box width="100%">
 					<Slide>
 						<Center>
-							<About />
+							<About></About>
 						</Center>
 					</Slide>
 				</Box>
-				<Box id="skills" width="100%">
-					<Center width='100%'>
-						<Slide direction='right'>
-							<Skills />
+				<Box width="100%">
+					<Center width="100%">
+						<Slide direction="right">
+							<Skills></Skills>
 						</Slide>
 					</Center>
 				</Box>

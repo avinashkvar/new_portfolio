@@ -1,5 +1,5 @@
 import { Box, VStack, Icon, Text, useColorModeValue } from '@chakra-ui/react';
-import {Flip,Zoom} from 'react-awesome-reveal'
+import {Zoom} from 'react-awesome-reveal'
 
 export const IconItem = ({ title, icon }) => {
 	const bg = useColorModeValue('#2d3748', '#f7fafc');

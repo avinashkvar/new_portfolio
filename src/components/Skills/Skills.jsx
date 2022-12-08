@@ -11,6 +11,7 @@ export const Skills = () => {
 				alignItems="center"
 				gap={[7, 8, 10]}
 				flexDirection={isLargerThan800 ? 'row' : 'column'}
+				id='skills'
 			>
 				<LogoContets />
 				<SkillIcons />
