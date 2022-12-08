@@ -6,6 +6,7 @@ import { ScrollTop } from './components/scrollup/ScrollTop';
 import { About } from './components/about/About';
 import { Slide, AttentionSeeker } from 'react-awesome-reveal';
 import { Skills } from './components/Skills/Skills';
+import { Projects } from './components/projects/Projects';
 
 function App() {
 	return (
@@ -19,7 +20,7 @@ function App() {
 						<Home />
 					</Center>
 				</Box>
-                <hr />
+				<hr />
 				<Box width="100%" id="about">
 					<Slide>
 						<Center>
@@ -33,6 +34,12 @@ function App() {
 						<AttentionSeeker effect="pulse">
 							<Skills></Skills>
 						</AttentionSeeker>
+					</Center>
+				</Box>
+				<hr />
+				<Box id="projects" width='100%'>
+					<Center>
+						<Projects/>
 					</Center>
 				</Box>
 			</Stack>
