@@ -4,7 +4,7 @@ import { Stack, Box, Center } from '@chakra-ui/react';
 import { Home } from './components/home/Home';
 import { ScrollTop } from './components/scrollup/ScrollTop';
 import { About } from './components/about/About';
-import { Slide } from 'react-awesome-reveal';
+import { Slide, AttentionSeeker } from 'react-awesome-reveal';
 import { Skills } from './components/Skills/Skills';
 
 function App() {
@@ -19,19 +19,20 @@ function App() {
 						<Home />
 					</Center>
 				</Box>
-
-				<Box width="100%">
+                <hr />
+				<Box width="100%" id="about">
 					<Slide>
 						<Center>
 							<About></About>
 						</Center>
 					</Slide>
 				</Box>
-				<Box width="100%">
+				<hr />
+				<Box width="100%" id="skills">
 					<Center width="100%">
-						<Slide direction="right">
+						<AttentionSeeker effect="pulse">
 							<Skills></Skills>
-						</Slide>
+						</AttentionSeeker>
 					</Center>
 				</Box>
 			</Stack>

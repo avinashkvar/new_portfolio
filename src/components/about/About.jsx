@@ -24,7 +24,7 @@ export const About = () => {
 					? { flexDirection: 'row' }
 					: { flexDirection: 'column-reverse' }
 			}
-			id="about"
+			margin='30px 0px 30px 0px'
 		>
 			<Box m={2}>
 				<VStack>

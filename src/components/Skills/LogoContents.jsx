@@ -10,7 +10,7 @@ export const LogoContets = () => {
 				<Text fontSize={['20px','30px','40px']}>I Can Work With</Text>
 				<Image
 					src={colorMode === 'light' ? skillsLight : skillsDark}
-					boxSize={['100px', '200px', '300px']}
+					boxSize={['200px', '300px', '400px']}
 				></Image>
 			</VStack>
 		</>
