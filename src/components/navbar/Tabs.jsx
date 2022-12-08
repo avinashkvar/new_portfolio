@@ -3,7 +3,6 @@ import {
 	useColorModeValue,
 	Button,
 	Icon,
-	useDisclosure,
 } from '@chakra-ui/react';
 import './link.css';
 import { AiFillHome } from 'react-icons/ai';

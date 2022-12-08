@@ -14,7 +14,7 @@ import {
 	useColorModeValue,
 	VStack
 } from '@chakra-ui/react';
-import { GiConsoleController, GiHamburgerMenu } from 'react-icons/gi';
+import {  GiHamburgerMenu } from 'react-icons/gi';
 import { useRef } from 'react';
 
 export const Navbar = () => {

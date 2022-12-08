@@ -7,17 +7,17 @@ import {
 	Image,
 	useColorMode,
 	Link,
-	Center
+	Center,
 } from '@chakra-ui/react';
 import { BsEmojiWinkFill, BsGithub, BsLinkedin } from 'react-icons/bs';
 import HomeImageLight from '../../media/HomeLight.svg';
 import HomeImageDark from '../../media/HomeDark.svg';
 import { AttentionSeeker } from 'react-awesome-reveal';
-import 'animate.css'
+import 'animate.css';
 export const Home = () => {
 	const { colorMode } = useColorMode();
 	return (
-		<VStack marginTop='60px'>
+		<VStack marginTop="60px">
 			<HStack>
 				<Box>
 					<Text fontSize={['40px', '50px', '100px']} fontWeight="bold">
@@ -29,7 +29,7 @@ export const Home = () => {
 						fontSize={['30px', '40px', '60px']}
 						bgGradient="linear(to-l, #7928CA, #FF0080)"
 						bgClip="text"
-						className="animate__animated animate__flipInX"
+						className="animate__animated animate__flipInX animate__slow	1s"
 					>
 						I'm <b>Avinash K</b>
 					</Text>

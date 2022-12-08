@@ -27,8 +27,10 @@ function App() {
 						</Center>
 					</Slide>
 				</Box>
-				<Box id='skills'>
-					<Skills/>
+				<Box id="skills" width='100%'>
+					<Center>
+						<Skills />
+					</Center>
 				</Box>
 			</Stack>
 			<Box>
