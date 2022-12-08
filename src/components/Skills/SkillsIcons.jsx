@@ -1,4 +1,4 @@
-import { Grid, useMediaQuery } from '@chakra-ui/react';
+import { Grid } from '@chakra-ui/react';
 import { AiFillHtml5 } from 'react-icons/ai';
 import { DiCss3 } from 'react-icons/di';
 import {
@@ -17,7 +17,7 @@ import { FaGitSquare } from 'react-icons/fa';
 import { IconItem } from './Icon';
 
 export const SkillIcons = () => {
-    const [isLargerThan800] = useMediaQuery('(min-width: 880px)');
+ 
 	const items = [
 		{ title: 'HTML', icon: AiFillHtml5 },
 		{ title: 'CSS', icon: DiCss3 },
@@ -35,7 +35,14 @@ export const SkillIcons = () => {
 		{ title: 'Bootstrap', icon: BsFillBootstrapFill },
 	];
 	return (
-		<Grid templateColumns="repeat(5, 1fr)" gap={[2,3,5]}>
+		<Grid
+			templateColumns={[
+				'repeat(2, 1fr)',
+				'repeat(3, 1fr)',
+				'repeat(5, 1fr)',
+			]}
+			gap={[2, 3, 5]}
+		>
 			{items.map((e) => (
 				<IconItem title={e.title} icon={e.icon} />
 			))}
