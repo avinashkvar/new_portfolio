@@ -14,7 +14,7 @@ export const IconItem = ({ title, icon }) => {
 			>
 				<VStack>
 					<Icon as={icon} fontSize={['20px', '30px', '40px']}></Icon>
-					<Text>{title}</Text>
+					<Text fontSize={['10px','13px','18px']}>{title}</Text>
 				</VStack>
 			</Box>
 		</Zoom>

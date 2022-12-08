@@ -28,7 +28,7 @@ function App() {
 					</Slide>
 				</Box>
 				<Box id="skills" width="100%">
-					<Center>
+					<Center width='100%'>
 						<Slide direction='right'>
 							<Skills />
 						</Slide>
