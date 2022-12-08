@@ -34,7 +34,7 @@ export const Projects = () => {
 			margin="30px 0px 30px 0px"
 			flexDirection={isLargerThan800 ? 'row' : 'column'}
 		>
-			{content.map((e) => (
+			{content.map((e,i) => (
 				<ProjectCard
 					image={e.imge}
 					title={e.title}
@@ -42,6 +42,7 @@ export const Projects = () => {
 					title2={e.title2}
                     gitHub={e.gitHub}
                     live={e.live}
+                    key={i}
 				/>
 			))}
 		</Flex>

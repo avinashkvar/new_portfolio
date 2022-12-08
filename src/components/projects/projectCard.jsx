@@ -44,12 +44,12 @@ export const ProjectCard = ({
 	return (
 		<Zoom>
 			<Card maxW={['sm', 'md', 'lg']} align="center">
-				<CardHeader
-					align="center"
-					onMouseEnter={() => setIsEntered(true)}
-					onMouseLeave={() => setIsEntered(false)}
-				>
-					<Image src={image}></Image>
+				<CardHeader align="center">
+					<Image
+						src={image}
+						onMouseEnter={() => setIsEntered(true)}
+						onMouseLeave={() => setIsEntered(false)}
+					></Image>
 					<Heading fontSize={['15px', '18px', '24px']} fontWeight="bold">
 						{title}
 					</Heading>
@@ -65,8 +65,8 @@ export const ProjectCard = ({
 				<CardFooter>
 					<VStack>
 						<HStack>
-							{items.map((e) => (
-								<TeachStack title={e.title} icon={e.icon} />
+							{items.map((e, i) => (
+								<TeachStack title={e.title} icon={e.icon} key={i} />
 							))}
 						</HStack>
 						<HStack>

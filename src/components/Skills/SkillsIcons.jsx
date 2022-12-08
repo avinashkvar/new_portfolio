@@ -43,8 +43,8 @@ export const SkillIcons = () => {
 			]}
 			gap={[2, 3, 5]}
 		>
-			{items.map((e) => (
-				<IconItem title={e.title} icon={e.icon} />
+			{items.map((e,i) => (
+				<IconItem title={e.title} icon={e.icon} key={i}/>
 			))}
 		</Grid>
 	);
