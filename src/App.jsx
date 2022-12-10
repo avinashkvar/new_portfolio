@@ -8,6 +8,7 @@ import { Slide, AttentionSeeker } from 'react-awesome-reveal';
 import { Skills } from './components/Skills/Skills';
 import { Projects } from './components/projects/Projects';
 import { Contact } from './components/contact/Contact';
+import { SendMsg } from './components/contactInfo/SendMsg';
 
 function App() {
 	return (
@@ -47,6 +48,12 @@ function App() {
 				<Box id="contact" width="100%">
 					<Center>
 						<Contact/>
+					</Center>
+				</Box>
+				<hr />
+				<Box gap={10}>
+					<Center>
+						<SendMsg/>
 					</Center>
 				</Box>
 			</Stack>
