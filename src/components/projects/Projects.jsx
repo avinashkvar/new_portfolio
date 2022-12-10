@@ -1,11 +1,11 @@
 import freshly from '../../media/freshly.png';
 import bigbascket from '../../media/big.png';
 import { ProjectCard } from './projectCard';
-import { Flex } from '@chakra-ui/react';
-import { useMediaQuery ,VStack,Text} from '@chakra-ui/react';
+import { Grid } from '@chakra-ui/react';
+import {  VStack,Text} from '@chakra-ui/react';
 
 export const Projects = () => {
-	const [isLargerThan800] = useMediaQuery('(min-width: 800px)');
+	
 	const content = [
 		{
 			imge: freshly,
@@ -28,15 +28,18 @@ export const Projects = () => {
 	];
 	return (
 		<VStack>
-            <Text m={8} fontSize={['30px','40px','60px']} fontWeight='bold'>
-               - Projects -
-            </Text>
-			<Flex
+			<Text m={8} fontSize={['30px', '40px', '60px']} fontWeight="bold">
+				- Projects -
+			</Text>
+			<Grid
 				gap={4}
-				justify="center"
-				align="center"
-				margin="30px 0px 30px 0px"
-				flexDirection={isLargerThan800 ? 'row' : 'column'}
+				margin="30px 10px 30px 10px"
+				templateColumns={[
+					'repeat(1, 1fr)',
+					'repeat(1, 1fr)',
+					'repeat(2, 1fr)',
+				]}
+				alignContent='center'
 			>
 				{content.map((e, i) => (
 					<ProjectCard
@@ -49,7 +52,7 @@ export const Projects = () => {
 						key={i}
 					/>
 				))}
-			</Flex>
+			</Grid>
 		</VStack>
 	);
 };
