@@ -9,6 +9,7 @@ import { Skills } from './components/Skills/Skills';
 import { Projects } from './components/projects/Projects';
 import { Contact } from './components/contact/Contact';
 import { SendMsg } from './components/contactInfo/SendMsg';
+import {Footer} from './components/footer/Footer'
 
 function App() {
 	return (
@@ -51,10 +52,16 @@ function App() {
 					</Center>
 				</Box>
 				<hr />
-				<Box gap={10}>
+				<Box gap={10} marginBottom='30px'>
 					<Center>
 						<SendMsg/>
 					</Center>
+				</Box>
+				<hr />
+                <Box marginTop={10}>
+                     <Center>
+						 <Footer></Footer>
+					 </Center>
 				</Box>
 			</Stack>
 			<Box>
