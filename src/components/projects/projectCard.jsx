@@ -19,10 +19,8 @@ import { FaCode } from 'react-icons/fa';
 import { IoIosEye } from 'react-icons/io';
 import '../navbar/link.css';
 import { Zoom } from 'react-awesome-reveal';
-import { AiFillHtml5 } from 'react-icons/ai';
-import { DiCss3 } from 'react-icons/di';
-import { SiJavascript } from 'react-icons/si';
 import { TeachStack } from './TechStack';
+
 
 export const ProjectCard = ({
 	image,
@@ -31,16 +29,13 @@ export const ProjectCard = ({
 	title2,
 	gitHub,
 	live,
+	items
 }) => {
 	const [isEntered, setIsEntered] = useState(false);
 	const bg = useColorModeValue('#2d3748', '#f7fafc');
 	const color = useColorModeValue('#f7fafc', '#2d3748');
 
-	const items = [
-		{ title: 'HTML', icon: AiFillHtml5 },
-		{ title: 'CSS', icon: DiCss3 },
-		{ title: 'JS', icon: SiJavascript },
-	];
+	
 	return (
 		<Zoom>
 			<Card maxW={['sm', 'md', 'lg']} align="center">

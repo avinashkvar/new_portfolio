@@ -10,14 +10,14 @@ export const TeachStack = ({ title, icon }) => {
 				padding="10px"
 				border={`1px solid ${bg}`}
 				borderRadius="50%"
-                width='80px'
-                height='80px'
+				width={['70px', '80px', '100px']}
+				height={['70px', '80px', '100px']}
 				_hover={{ background: bg, color: color }}
 				transition="all 0.5s ease"
 			>
 				<VStack>
 					<Link>
-						<Icon as={icon} fontSize='25px'></Icon>
+						<Icon as={icon} fontSize={['20px', '25px', '35px']}></Icon>
 					</Link>
 					<Text fontSize={['10px', '13px', '18px']}>{title}</Text>
 				</VStack>
