@@ -9,7 +9,7 @@ import { Skills } from './components/Skills/Skills';
 import { Projects } from './components/projects/Projects';
 import { Contact } from './components/contact/Contact';
 import { SendMsg } from './components/contactInfo/SendMsg';
-import {Footer} from './components/footer/Footer'
+import { Footer } from './components/footer/Footer'
 
 function App() {
 	return (

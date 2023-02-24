@@ -11,8 +11,8 @@ import {
 	Heading,
 	useColorModeValue,
 	Link,
-    HStack,
-    VStack
+	HStack,
+	VStack,
 } from '@chakra-ui/react';
 import { useState } from 'react';
 import { FaCode } from 'react-icons/fa';
@@ -21,7 +21,6 @@ import '../navbar/link.css';
 import { Zoom } from 'react-awesome-reveal';
 import { TeachStack } from './TechStack';
 
-
 export const ProjectCard = ({
 	image,
 	title,
@@ -29,13 +28,12 @@ export const ProjectCard = ({
 	title2,
 	gitHub,
 	live,
-	items
+	items,
 }) => {
 	const [isEntered, setIsEntered] = useState(false);
 	const bg = useColorModeValue('#2d3748', '#f7fafc');
 	const color = useColorModeValue('#f7fafc', '#2d3748');
 
-	
 	return (
 		<Zoom>
 			<Card maxW={['sm', 'md', 'lg']} align="center">
@@ -65,38 +63,38 @@ export const ProjectCard = ({
 							))}
 						</HStack>
 						<HStack>
-							<Button
-								margin="0px 20px 0px 20px"
-								width="150px"
-								height="auto"
-								padding={['10px', '13px', '15px']}
-								_hover={{ background: bg, color: color }}
-							>
-								<Link className="link" href={live} isExternal>
+							<Link className="link" href={live} isExternal>
+								<Button
+									margin="0px 20px 0px 20px"
+									width="150px"
+									height="auto"
+									padding={['10px', '13px', '15px']}
+									_hover={{ background: bg, color: color }}
+								>
 									<Text
 										fontSize={['18px', '18px', '20px']}
 										fontWeight="bold"
 									>
 										Live<Icon as={IoIosEye} marginLeft="5px"></Icon>
 									</Text>
-								</Link>
-							</Button>
-							<Button
-								margin="0px 20px 0px 20px"
-								width="150px"
-								height="auto"
-								padding={['10px', '13px', '15px']}
-								_hover={{ background: bg, color: color }}
-							>
-								<Link className="link" isExternal href={gitHub}>
+								</Button>
+							</Link>
+							<Link className="link" isExternal href={gitHub}>
+								<Button
+									margin="0px 20px 0px 20px"
+									width="150px"
+									height="auto"
+									padding={['10px', '13px', '15px']}
+									_hover={{ background: bg, color: color }}
+								>
 									<Text
 										fontSize={['18px', '18px', '20px']}
 										fontWeight="bold"
 									>
 										Code<Icon as={FaCode} marginLeft="5px"></Icon>
 									</Text>
-								</Link>
-							</Button>
+								</Button>
+							</Link>
 						</HStack>
 					</VStack>
 				</CardFooter>

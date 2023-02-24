@@ -34,7 +34,7 @@ export const Contact = () => {
 			icon: HiMail,
 		},
 		{
-			title: 'Phone',
+			title: '9110434503',
 			link: 'tel:+91 9110434503',
 			icon: MdCall,
 		},

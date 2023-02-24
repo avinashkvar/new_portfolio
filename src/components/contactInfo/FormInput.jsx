@@ -67,7 +67,8 @@ export const FormInput = () => {
 								title: 'Thanks for Reaching',
 								position: "bottom-right",
 								isClosable: true,
-								status:'success'
+								status:'success',
+								duration:1500
 							});
 					}}>Submit</Button>
 				</>

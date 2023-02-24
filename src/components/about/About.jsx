@@ -9,7 +9,7 @@ import {
 	useMediaQuery,
 } from '@chakra-ui/react';
 import { Description } from './Discription';
-import photo from '../../media/Photo.jpg';
+import photo from '../../media/githubedit1.jpg';
 import { DownloadResume } from './DownloadResume';
 import { ViewResume } from './ViewResume';
 export const About = () => {
@@ -24,7 +24,7 @@ export const About = () => {
 					? { flexDirection: 'row' }
 					: { flexDirection: 'column-reverse' }
 			}
-			margin='30px 0px 30px 0px'
+			margin="30px 0px 30px 0px"
 		>
 			<Box m={2}>
 				<VStack>
@@ -41,10 +41,9 @@ export const About = () => {
 			<Box m={2}>
 				<Image
 					src={photo}
-					borderRadius="8px"
 					bg={bg}
 					padding="2px"
-					width={['200px', '400px', '800px']}
+					borderRadius="10%"
 				></Image>
 			</Box>
 		</Flex>

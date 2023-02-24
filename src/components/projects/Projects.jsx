@@ -19,7 +19,7 @@ export const Projects = () => {
 			discription:
 				'A Food Ordering Web Application where users can login to the site and add their favourite dishes to the cart and User can also sort and filter his favorite foods and pay the payment and the dishes get delivered to their Residentail Home Address provided in the site.',
 			title2: 'A Web Application where user can order food.',
-			live: 'https://clonefreshly.netlify.app',
+			live: 'https://magical-mousse-a93d02.netlify.app/',
 			gitHub: 'https://github.com/avinashkvar/freshly',
 			items: [
 				{ title: 'HTML', icon: AiFillHtml5 },
