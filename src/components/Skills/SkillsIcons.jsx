@@ -5,14 +5,13 @@ import {
 	SiJavascript,
 	SiRedux,
 	SiMongodb,
-	SiPostman,
 	SiChakraui,
 	SiMaterialui,
 	SiExpress,
 } from 'react-icons/si';
 import { GrReactjs } from 'react-icons/gr';
 import { IoLogoNodejs } from 'react-icons/io';
-import { BsGithub, BsFillBootstrapFill } from 'react-icons/bs';
+import {  BsFillBootstrapFill } from 'react-icons/bs';
 import { FaGitSquare } from 'react-icons/fa';
 import { IconItem } from './Icon';
 
@@ -26,8 +25,6 @@ export const SkillIcons = () => {
 		{ title: 'Redux', icon: SiRedux },
 		{ title: 'NodeJS', icon: IoLogoNodejs },
 		{ title: 'MongoDB', icon: SiMongodb },
-		{ title: 'Postman', icon: SiPostman },
-		{ title: 'GitHub', icon: BsGithub },
 		{ title: 'GitBash', icon: FaGitSquare },
 		{ title: 'ChakraUI', icon: SiChakraui },
 		{ title: 'MUI', icon: SiMaterialui },
