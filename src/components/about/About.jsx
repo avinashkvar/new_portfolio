@@ -9,7 +9,7 @@ import {
 	useMediaQuery,
 } from '@chakra-ui/react';
 import { Description } from './Discription';
-import photo from '../../media/githubedit1.jpg';
+import photo from '../../media/new_photo.jpg';
 import { DownloadResume } from './DownloadResume';
 import { ViewResume } from './ViewResume';
 export const About = () => {
